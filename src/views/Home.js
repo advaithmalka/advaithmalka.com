@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import DownArrow from "../components/DownArrow";
 import FeaturedCard from "../components/FeaturedCard";
 import data from "../data/project-data.json";
+import {HashLink} from "react-router-hash-link";
 const Home = (props) => {
 	useEffect(() => {
 		document.title = "Home";
@@ -47,7 +48,7 @@ const Home = (props) => {
 						And this is my personal website!
 						<br />
 						This website includes all of my programming projects
-						that I've built over the years using with a wide variety 
+						that I've built over the years using with a wide variety
 						of languages.
 						<br /> Use the nav links above to start exploring!
 					</p>
@@ -61,9 +62,11 @@ const Home = (props) => {
 						About Me!
 					</button>
 				</Link>
-				<DownArrow />
+				<HashLink smooth to="#featured">
+					<DownArrow />
+				</HashLink>
 			</div>
-			<div className="container my-5">
+			<div id="featured" className="container my-5">
 				<h2>Featured projects</h2>
 				<div className="row">{featured}</div>
 			</div>
