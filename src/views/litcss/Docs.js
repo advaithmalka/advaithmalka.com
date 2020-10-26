@@ -11,7 +11,7 @@ const LitcssDocs = () => {
 		<iframe
 			style={{ width: "100vw", height: "90vh", border: "none" }}
 			title="litcss docs iframe"
-			src={`${process.env.PUBLIC_URL}/_litcss/litcss-docs.html`}
+			src={`https://advaithm26.github.io/LitCSS/litcss-docs.html`}
 		/>
 	);
 };	
