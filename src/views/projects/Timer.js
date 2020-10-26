@@ -9,8 +9,8 @@ const TimerApp = () => {
 		<>
 			<iframe
 				style={{ width: "100vw", border: "none", height: "100vh" }}
-				title="slideshow iframe"
-				src={`${process.env.PUBLIC_URL}/_projects/Clock-apps/timer.html`}
+				title="timer iframe"
+				src={`https://advaithm26.github.io/old-website/timer.html`}
 			/>
 		</>
 	);

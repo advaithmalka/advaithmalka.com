@@ -8,8 +8,8 @@ const ClockApp = () => {
 		<>
 			<iframe
 				style={{ width: "100vw", border: "none", height: "100vh" }}
-				title="slideshow iframe"
-				src={`${process.env.PUBLIC_URL}/_projects/Clock-apps/clock.html`}
+				title="clock iframe"
+				src={`https://advaithm26.github.io/old-website/clock.html`}
 			/>
 		</>
 	);

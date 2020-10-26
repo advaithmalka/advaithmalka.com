@@ -11,7 +11,7 @@ const Slideshow = () => {
   return (
     <>
       <iframe onLoad={resizeIframe} style={{width: '100vw', border:'none'}} title='slideshow iframe' 
-		src={`${process.env.PUBLIC_URL}/_projects/slideshow/`}/>
+		src={`https://advaithm26.github.io/old-website/projects/slideshow/`}/>
     </>
   )
 }

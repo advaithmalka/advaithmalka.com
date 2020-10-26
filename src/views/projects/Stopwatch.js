@@ -9,8 +9,8 @@ const StopwatchApp = () => {
 		<>
 			<iframe
 				style={{ width: "100vw", border: "none", height: "100vh" }}
-				title="slideshow iframe"
-				src={`${process.env.PUBLIC_URL}/_projects/Clock-apps/stopWatch.html`}
+				title="stopwatch iframe"
+				src={`https://advaithm26.github.io/old-website/stopWatch.html`}
 			/>
 		</>
 	);
