@@ -47,7 +47,7 @@ const Home = (props) => {
 						And this is my personal website!
 						<br />
 						This website includes all of my programming projects
-						that I've built over the years using with a wide verity
+						that I've built over the years using with a wide variety 
 						of languages.
 						<br /> Use the nav links above to start exploring!
 					</p>
