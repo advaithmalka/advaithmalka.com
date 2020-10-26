@@ -1,0 +1,95 @@
+body.f-roboto {
+	#home {
+		font-family: "Roboto", sans-serif !important;
+	}
+}
+.body-grad {
+	background-image: linear-gradient(to right, #00c6ff, #0072ff);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: 100% 100%;
+}
+
+.f-raleway {
+	font-family: "Raleway", sans-serif;
+}
+#home {
+	font-family: "Raleway", sans-serif;
+}
+
+.abt-btn {
+	padding: 12px;
+	border-radius: 5px;
+	outline: none !important;
+	border: none;
+	color: white;
+	transition: all 200ms;
+	background: linear-gradient(135deg, #f55668, #f86e59);
+	&:hover {
+		transform: translateY(-1px);
+		box-shadow: 3px 3px 10px rgba(39, 39, 39, 0.1);
+		filter: brightness(1.1);
+	}
+}
+*:not(.codebox pre code) {
+	font-family: "Raleway", sans-serif;
+}
+
+::-webkit-scrollbar {
+	width: 10px;
+	height: 8px;
+	-webkit-transition: 0.3s;
+	transition: 0.3s;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+	background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: #252525;
+	border-radius: 10px;
+	
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: #474747
+}
+
+::-webkit-scrollbar-thumb:active {
+	background: #686868;
+}
+
+.footer-link {
+	color: rgb(255, 255, 255);
+	&:hover {
+		color: #bebebe;
+	}
+}
+#baby-advaith-pic{
+	width: 100%;
+}
+#home-content{
+	width: 600px;
+}
+@media screen and (max-width: 800px){
+	#baby-advaith-pic{
+		width: 80%;
+	}
+	#home-content{
+		width: 80vw;
+	}
+}
+
+// ul.list-dashed {
+// 	list-style-type: none;
+// 	& > li {
+// 		text-indent: -5px;
+// 		&:before {
+// 			content: "-  ";
+// 			text-indent: -5px;
+// 		}
+// 	}
+// }

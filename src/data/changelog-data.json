@@ -1,0 +1,52 @@
+[
+  {
+    "date":"10/19/20",
+    "version":"0.1 BETA",
+    "completed":[
+      "Finished home page",
+      "Finished projects page",
+      "Finished changelog page"
+    ]
+  },
+  {
+    "date":"10/22/20",
+    "version":"0.2 BETA",
+    "completed":[
+      "Finished LitCSS and LitCSS docs page"
+    ]
+  },
+  {
+    "date":"10/23/20",
+    "version":"0.3 BETA",
+    "completed":[
+      "Finished Cookie JS and Cookie JS docs page"
+    ]
+  },
+  {
+    "date":"10/24/20",
+    "version":"0.4 BETA",
+    "completed":[
+      "Finished about page",
+      "Navbar improvements and fixes",
+      "Finished importing projects"
+    ]
+  },
+  {
+    "date":"10/25/20",
+    "version":"0.5 BETA",
+    "completed":[
+      "Added progress/loading bar that shows up when switching pages",
+      "Finished footer",
+      "Finished hash link redirecting",
+      "Bug fixes"
+    ]
+  },
+  {
+    "date":"10/26/20",
+    "version":"1.0 Release! 😃",
+    "completed":[
+      "Minor touch ups",
+      "A LOT of bug fixes"
+    ]
+  }
+]

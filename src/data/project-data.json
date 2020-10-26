@@ -1,0 +1,157 @@
+[
+  {
+    "name": "Yummy Recipes",
+    "description": "A collection of some of my favorite food recipes",
+    "img": "yummy-recipes.jpg",
+    "link": "/yummy-recipes",
+    "date": "4/10/20",
+    "badges": [
+      "html",
+      "css"
+    ]
+  },
+  {
+    "name": "Star Wars Mad-lib",
+    "description": "Create your own Start Wars saga with this awesome mad-lib!",
+    "img": "star-wars-mad-lib.jpg",
+    "link": "/star-wars-mad-lib",
+    "date": "5/12/20",
+    "badges": [
+      "html",
+      "css",
+      "js"
+    ]
+  },
+  {
+    "name": "Clock",
+    "description": "Check out the exact time, down to the second, with this online Clock!",
+    "img": "clock.jpg",
+    "link": "/clock",
+    "date": "5/15/20",
+    "badges": [
+      "html",
+      "css",
+      "js"
+    ]
+  },
+  {
+    "name": "Stopwatch",
+    "description": "Time yourself with this simple stopwatch",
+    "img": "stopwatch.jpg",
+    "link": "/stopwatch",
+    "date": "5/15/20",
+    "badges": [
+      "html",
+      "css",
+      "js"
+    ]
+  },
+  {
+    "name": "Timer",
+    "description": "A simple, yet sleek, online Timer",
+    "img": "timer.jpg",
+    "link": "/timer",
+    "date": "5/20/20",
+    "badges": [
+      "html",
+      "css",
+      "js"
+    ]
+  },
+  {
+    "name": "Word game",
+    "description": "Quiz your programming skills by unscrambling these coding words!",
+    "img": "word-game.jpg",
+    "link": "/word-game",
+    "date": "5/29/20",
+    "badges": [
+      "html",
+      "css",
+      "js"
+    ]
+  },
+  {
+    "name": "Slideshow",
+    "description": "View memories by importing any online images to this customizable slideshow!",
+    "img": "slideshow.jpg",
+    "link": "/slideshow",
+    "date": "6/4/20",
+    "badges": [
+      "html",
+      "css",
+      "js"
+    ]
+  },
+  {
+    "name": "CookieJS",
+    "description": "A simple JS library to store and manipulate cookies in your website",
+    "img": "cookie-js.jpg",
+    "link": "/cookie-js",
+    "date": "7/4/20",
+    "badges": [
+      "js"
+    ]
+  },
+  {
+    "name": "LitCSS",
+    "description": "A CSS utility library that saves you loads of time",
+    "img": "litcss.jpg",
+    "link": "/litcss",
+    "date": "7/25/20",
+    "badges": [
+      "css",
+      "js"
+    ]
+  },
+  {
+    "name": "Camera app",
+    "description": "Take photos and download them in this simple to use camera app!",
+    "img": "camera-app.jpg",
+    "link": "https://advaithm26.github.io/camera-app/",
+    "date": "7/29/20",
+    "badges": [
+      "html",
+      "css",
+      "js"
+    ]
+  },
+  {
+    "name": "Todo List",
+    "description": "Keep track of all of your tasks in one place accessible anywhere!",
+    "img": "todo-list.jpg",
+    "link": "http://advaithsprojects.epizy.com/todo_list/",
+    "date": "8/8/20",
+    "badges": [
+      "html",
+      "css",
+      "js",
+      "php",
+      "sql"
+    ]
+  },
+  {
+    "name": "Money Tracker",
+    "description": "Keep track of expenses and your balance, all in one place",
+    "img": "money-tracker.jpg",
+    "link": "https://advaiths-money-tracker.herokuapp.com/",
+    "date": "9/2/20",
+    "badges": [
+      "html",
+      "css",
+      "js",
+      "django"
+    ]
+  },
+  {
+    "name": "Chess AI",
+    "description": "Play chess against an AI right in your browser!",
+    "img": "chess-ai.jpg",
+    "link": "https://advaithm26.github.io/chess-ai/",
+    "date": "10/7/20",
+    "badges": [
+      "html",
+      "css",
+      "js"
+    ]
+  }
+]
