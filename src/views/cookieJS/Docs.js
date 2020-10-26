@@ -11,7 +11,7 @@ const CookieJSDocs = () => {
 			<iframe
 				style={{ width: "100vw", height: "88vh", border: "none" }}
 				title="cookie js docs iframe"
-				src={`https://advaithm26.github.io/LitCSS/litcss-docs.html`}
+				src={`https://advaithm26.github.io/LitCSS/cookie-js-docs.html`}
 			/>
 		</>
 	);
