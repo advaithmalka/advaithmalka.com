@@ -26,6 +26,7 @@
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
+    "push":"git push origin master",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
