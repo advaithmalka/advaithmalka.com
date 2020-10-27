@@ -40,7 +40,7 @@ function Navbar() {
 				<li className="nav-item" key={idx}>
 					{link.startsWith("http") ? (
 						<a
-							className="nav-link text-small pb-0 text-decoration-none r-router-link"
+							className="nav-link text-small pb-0 text-decoration-none"
 							target="_blank"
 							rel="noreferrer noopener"
 							href={link}
@@ -49,7 +49,7 @@ function Navbar() {
 						</a>
 					) : (
 						<Link
-							className="r-router-link text-decoration-none"
+							className="text-decoration-none"
 							to={link}
 						>
 							<span className="nav-link text-small pb-0 r-router-link">
