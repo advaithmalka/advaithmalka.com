@@ -5,7 +5,7 @@ import Home from "./views/Home";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import About from "./views/About";
-import { HashRouter as Router, Switch, Route } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import Projects from "./views/Projects";
 import Changelog from "./views/Changelog";

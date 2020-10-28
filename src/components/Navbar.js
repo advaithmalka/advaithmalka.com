@@ -24,13 +24,23 @@ function Navbar() {
 	});
 	useEffect(() => {
 		document.body.addEventListener("click", (e) => {
-			if ((e.target.classList.contains("r-router-link")) && !(window.location.href === e.target.parentElement.href ||
-				window.location.href ===
-					e.target.parentElement.parentElement.href)) {
+			if (
+				e.target.classList.contains("r-router-link") &&
+				!(
+					window.location.href === e.target.parentElement.href ||
+					window.location.href ===
+						e.target.parentElement.parentElement.href
+				)
+			) {
 				Np.inc(0.5);
-				window.addEventListener("hashchange", () => {
-					Np.done();
-				});
+				let oldHref = window.location.href
+				const interval = setInterval(() =>{
+					let newHref = window.location.href
+					if(oldHref !== newHref) {
+						Np.done()
+						clearInterval(interval)
+					}
+				}, 30)
 			}
 		});
 		const libs = ["litcss", "cookiejs"];
@@ -48,10 +58,7 @@ function Navbar() {
 							{name}
 						</a>
 					) : (
-						<Link
-							className="text-decoration-none"
-							to={link}
-						>
+						<Link className="text-decoration-none" to={link}>
 							<span className="nav-link text-small pb-0 r-router-link">
 								{name}
 							</span>
@@ -84,13 +91,10 @@ function Navbar() {
 				id="navbar"
 				className="sticky-top navbar navbar-expand-lg navbar-light nav-color py-2 custom-shadow"
 			>
-				<Link
-					to="/"
-					style={{ textDecoration: "none" }}
-				>
+				<Link to="/" style={{ textDecoration: "none" }}>
 					<span className="navbar-brand d-block d-lg-none">
 						<img
-							className='r-router-link'
+							className="r-router-link"
 							src={Logo}
 							alt="Logo"
 							width="40px"
