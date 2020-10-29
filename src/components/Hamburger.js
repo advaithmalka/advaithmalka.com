@@ -3,8 +3,8 @@ const Hamburger = props => {
 	return (
 		<span
 			className="hamburger-icon m-0 scale-75"
-			alt="toggle navbar"
 			id={props.id}
+			style={{cursor:'pointer'}}
 		>
 			<span className="bar" />
 			<span className="bar" />

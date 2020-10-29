@@ -8,10 +8,13 @@ import "../assets/css/Navbar.scss";
 import data from "../data/project-data.json";
 import Np from "nprogress";
 function Navbar() {
+	const NavBurger = document.getElementById("inner-nav-hamburger")
 	const hamburgerClick = (e) => {
-		document
-			.getElementById("inner-nav-hamburger")
-			.classList.toggle("clicked");
+		if(!document.getElementById('navbarContent').classList.contains('show')){
+			NavBurger.classList.add("clicked");
+		}else{
+			NavBurger.classList.remove("clicked");
+		}
 	};
 	const [projects, setProjects] = useState();
 	const [projects2, setProjects2] = useState();
@@ -111,7 +114,7 @@ function Navbar() {
 					aria-expanded="false"
 					aria-label="Toggle navigation"
 					className="navbar-toggler bg-white"
-					style={{ border: "none !important" }}
+					style={{ border: "none !important", cursor:'pointer' }}
 					id="navbar-hamburger"
 				>
 					<Hamburger id="inner-nav-hamburger" />

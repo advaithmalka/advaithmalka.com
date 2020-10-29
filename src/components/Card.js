@@ -8,7 +8,7 @@ import {
 	SQL,
 	DJANGO,
 	REACT,
-} from "../components/svg/badges";
+} from "./svg/badges";
 import Tippy from "@tippyjs/react";
 import "tippy.js/dist/tippy.css";
 import { Link } from "react-router-dom";

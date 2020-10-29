@@ -48,5 +48,13 @@
       "Minor touch ups",
       "A LOT of bug fixes"
     ]
+  },
+  {
+    "date":"10/29/20",
+    "version":"1.1",
+    "completed":[
+      "Switched router from Hash to BrowserRouter",
+      "Bug fixes + improvements"
+    ]
   }
 ]
