@@ -153,5 +153,21 @@
       "css",
       "js"
     ]
+  },
+  {
+    "name": "DevMedia",
+    "description": "A social media app built for developers",
+    "img": "devmedia.png",
+    "link": "https://advaithm26.github.io/devmedia/",
+    "date": "11/19/20",
+    "badges": [
+      "html",
+      "css",
+      "ts",
+      "react",
+      "node",
+      "graphql",
+      "mongodb"
+    ]
   }
 ]

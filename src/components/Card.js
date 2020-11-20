@@ -8,6 +8,10 @@ import {
 	SQL,
 	DJANGO,
 	REACT,
+	NODE,
+	TS,
+	GRAPHQL,
+	MONGODB,
 } from "./svg/badges";
 import Tippy from "@tippyjs/react";
 import "tippy.js/dist/tippy.css";
@@ -28,7 +32,7 @@ const propBadges = {
 		</Tippy>
 	),
 	js: (
-		<Tippy key={Math.floor(Math.random() * 10000)} content="JS">
+		<Tippy key={Math.floor(Math.random() * 10000)} content="JavaScript">
 			<span className="mr-1 float-right">
 				<JS />
 			</span>
@@ -62,6 +66,34 @@ const propBadges = {
 			</span>
 		</Tippy>
 	),
+	node: (
+		<Tippy key={Math.floor(Math.random() * 10000)} content="Node.js">
+			<span className="mr-1 float-right">
+				<NODE />
+			</span>
+		</Tippy>
+	),
+	ts: (
+		<Tippy key={Math.floor(Math.random() * 10000)} content="TypeScript">
+			<span className="mr-1 float-right">
+				<TS />
+			</span>
+		</Tippy>
+	),
+	graphql: (
+		<Tippy key={Math.floor(Math.random() * 10000)} content="GraphQL">
+			<span className="mr-1 float-right">
+				<GRAPHQL />
+			</span>
+		</Tippy>
+	),
+	mongodb: (
+		<Tippy key={Math.floor(Math.random() * 10000)} content="MongoDB">
+			<span className="mr-1 float-right">
+				<MONGODB />
+			</span>
+		</Tippy>
+	),
 };
 const Card = (props) => {
 	const allBadges = props.badges.map((badge) => {
@@ -71,7 +103,11 @@ const Card = (props) => {
 	return (
 		<div className="col-lg-4 col-md-6">
 			<div className="lit-card my-3" style={props.style}>
-				<img className="lit-card-img" src={`${process.env.PUBLIC_URL}/img/${props.img}`} alt="Project" />
+				<img
+					className="lit-card-img"
+					src={`${process.env.PUBLIC_URL}/img/${props.img}`}
+					alt="Project"
+				/>
 				{allBadges}
 				<div className="lit-card-body">
 					<h1 className="lit-card-title mb-3">{props.title}</h1>
@@ -80,13 +116,17 @@ const Card = (props) => {
 					{props.link.startsWith("http") ? (
 						<a
 							className="lit-card-btn"
-							target='_blank'
-							rel='noreferrer noopener'
+							target="_blank"
+							rel="noreferrer noopener"
 							href={props.link}
-						>View</a>
+						>
+							View
+						</a>
 					) : (
 						<Link to={props.link} className="text-decoration-none">
-							<button className="lit-card-btn r-router-link">View</button>
+							<button className="lit-card-btn r-router-link">
+								View
+							</button>
 						</Link>
 					)}
 				</div>

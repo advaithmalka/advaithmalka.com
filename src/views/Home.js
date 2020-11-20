@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import DownArrow from "../components/DownArrow";
 import FeaturedCard from "../components/FeaturedCard";
 import data from "../data/project-data.json";
-import {HashLink} from "react-router-hash-link";
+import { HashLink } from "react-router-hash-link";
 const Home = (props) => {
 	useEffect(() => {
 		document.title = "Home";
@@ -18,7 +18,7 @@ const Home = (props) => {
 	const [featured, setFeatured] = useState();
 
 	useEffect(() => {
-		const featuredItems = ["chess ai", "todo list", "litcss"];
+		const featuredItems = ["devmedia", "chess ai", "todo list"];
 		const cleanedData = data.filter(({ name }) =>
 			featuredItems.includes(name.toLowerCase())
 		);
