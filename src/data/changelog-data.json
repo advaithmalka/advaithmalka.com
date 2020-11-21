@@ -64,5 +64,13 @@
       "Added DevMedia to projects page",
       "Added Typescript, Node, Graphql, and MongoDB badges"
     ]
+  },
+  {
+    "date": "11/21/20",
+    "version": "1.3",
+    "completed": [
+      "Added skill set to about page",
+      "Minor footer updates"
+    ]
   }
 ]

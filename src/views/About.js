@@ -6,6 +6,8 @@ import InstaLogo from "../assets/img/instagram-logo.svg";
 import MailLogo from "../assets/img/mail.svg";
 import babyAdvaith from "../assets/img/baby-advaith.jpg";
 import aboutBackdrop from "../assets/img/about-backdrop.jpg";
+import { Row, Col } from "react-bootstrap";
+import SkillSet from "../components/SkillSet";
 import $ from "jquery";
 const About = (props) => {
 	useEffect(() => {
@@ -13,9 +15,10 @@ const About = (props) => {
 		document.body.classList.add("body-grad");
 		return () => {
 			document.body.classList.remove("body-grad");
-			$(window).off('scroll.about')
+			$(window).off("scroll.about");
 		};
 	}, []);
+
 	const offset = 230;
 	$(window).on("scroll.about", () => {
 		$("#about").css(
@@ -55,7 +58,7 @@ const About = (props) => {
 						<div className="col-md-4">
 							<div className="container">
 								<img
-									id='baby-advaith-pic'
+									id="baby-advaith-pic"
 									className="b-round-5 ml-4 mt-1"
 									alt="baby advaith"
 									src={babyAdvaith}
@@ -81,8 +84,10 @@ const About = (props) => {
 						</div>
 					</div>
 
+					<SkillSet />
+
 					<h4 className="card-body mt-5 mb-n2">Contact:</h4>
-					<div className="row">
+					<Row>
 						<div className="col d-flex justify-content-center">
 							<a
 								className="ml-5 d-inline wd-max-content"
@@ -131,7 +136,7 @@ const About = (props) => {
 								</Tippy>
 							</a>
 						</div>
-					</div>
+					</Row>
 				</div>
 			</div>
 		</>

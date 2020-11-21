@@ -23,6 +23,8 @@ import TimerApp from "./views/projects/Timer";
 import StopwatchApp from "./views/projects/Stopwatch";
 // const Projects = React.lazy(() => import("./views/Projects"));
 const App = () => {
+	fetch("https://devmedia-server.herokuapp.com/");
+	fetch("https://advaiths-money-tracker.herokuapp.com/");
 	return (
 		<>
 			<Router onChange={(e) => console.log(e)}>
@@ -57,11 +59,7 @@ const App = () => {
 						href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap"
 						rel="stylesheet"
 					></link>
-					<script
-						defer
-						src="https://code.jquery.com/jquery-3.5.1.min.js"
-					></script>
-					<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/js/bootstrap.bundle.min.js"></script>
+					<script src="https://cdn.jsdelivr.net/npm/bootstrap.native@3.0.0/dist/bootstrap-native.min.js"></script>
 				</Helmet>
 			</HelmetProvider>
 		</>
