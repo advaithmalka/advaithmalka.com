@@ -1,7 +1,7 @@
 [
   {
     "name": "Yummy Recipes",
-    "description": "A collection of some of my favorite food recipes",
+    "description": "A collection of some of my favorite food recipes.",
     "img": "yummy-recipes.jpg",
     "link": "/yummy-recipes",
     "date": "4/10/20",
@@ -36,7 +36,7 @@
   },
   {
     "name": "Stopwatch",
-    "description": "Time yourself with this simple stopwatch",
+    "description": "Time yourself with this simple stopwatch.",
     "img": "stopwatch.jpg",
     "link": "/stopwatch",
     "date": "5/15/20",
@@ -48,7 +48,7 @@
   },
   {
     "name": "Timer",
-    "description": "A simple, yet sleek, online Timer",
+    "description": "A simple, yet sleek, online Timer.",
     "img": "timer.jpg",
     "link": "/timer",
     "date": "5/20/20",
@@ -84,7 +84,7 @@
   },
   {
     "name": "CookieJS",
-    "description": "A simple JS library to store and manipulate cookies in your website",
+    "description": "A simple JS library to store and manipulate cookies in your website.",
     "img": "cookie-js.jpg",
     "link": "/cookie-js",
     "date": "7/4/20",
@@ -94,7 +94,7 @@
   },
   {
     "name": "LitCSS",
-    "description": "A CSS utility library that saves you loads of time",
+    "description": "A CSS utility library that saves you loads of time.",
     "img": "litcss.jpg",
     "link": "/litcss",
     "date": "7/25/20",
@@ -131,7 +131,7 @@
   },
   {
     "name": "Money Tracker",
-    "description": "Keep track of expenses and your balance, all in one place",
+    "description": "Keep track of expenses and your balance, all in one place.",
     "img": "money-tracker.jpg",
     "link": "https://advaiths-money-tracker.herokuapp.com/",
     "date": "9/2/20",
@@ -156,7 +156,7 @@
   },
   {
     "name": "DevMedia",
-    "description": "A social media app built for developers",
+    "description": "A social media app built for developers, by developers.",
     "img": "devmedia.png",
     "link": "https://advaithm26.github.io/devmedia/",
     "date": "11/19/20",
@@ -164,6 +164,22 @@
       "html",
       "css",
       "ts",
+      "react",
+      "node",
+      "graphql",
+      "mongodb"
+    ]
+  },
+  {
+    "name": "JobRecover",
+    "description": "A web app made for HackTJ 7.5 and designed to connect employers to the unemployed, during difficult times.",
+    "img": "JobRecover.jpg",
+    "link": "https://realtechnerd.github.io/job-recover-client/",
+    "date": "12/13/20",
+    "badges": [
+      "html",
+      "css",
+      "js",
       "react",
       "node",
       "graphql",
