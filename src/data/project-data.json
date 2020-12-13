@@ -173,7 +173,7 @@
   {
     "name": "JobRecover",
     "description": "A web app made for HackTJ 7.5 and designed to connect employers to the unemployed, during difficult times.",
-    "img": "JobRecover.jpg",
+    "img": "jobRecover.jpg",
     "link": "https://realtechnerd.github.io/job-recover-client/",
     "date": "12/13/20",
     "badges": [
