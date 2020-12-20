@@ -18,7 +18,7 @@ const Home = (props) => {
 	const [featured, setFeatured] = useState();
 
 	useEffect(() => {
-		const featuredItems = ["jobrecover", "devmedia", "chess ai"];
+		const featuredItems = ["superchat", "jobrecover", "devmedia"];
 		const cleanedData = data.filter(({ name }) =>
 			featuredItems.includes(name.toLowerCase())
 		);
