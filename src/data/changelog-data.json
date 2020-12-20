@@ -79,5 +79,14 @@
     "completed": [
       "Added JobRecover to projects"
     ]
+  },
+  {
+    "date": "12/20/20",
+    "version": "1.5",
+    "completed": [
+      "Added SuperChat to projects",
+      "Added Express badge",
+      "Removed unused dependencies"
+    ]
   }
 ]

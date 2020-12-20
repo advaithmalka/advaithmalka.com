@@ -6,7 +6,7 @@ import InstaLogo from "../assets/img/instagram-logo.svg";
 import MailLogo from "../assets/img/mail.svg";
 import babyAdvaith from "../assets/img/baby-advaith.jpg";
 import aboutBackdrop from "../assets/img/about-backdrop.jpg";
-import { Row, Col } from "react-bootstrap";
+import { Row } from "react-bootstrap";
 import SkillSet from "../components/SkillSet";
 import $ from "jquery";
 const About = (props) => {

@@ -12,6 +12,7 @@ import {
 	TS,
 	GRAPHQL,
 	MONGODB,
+	EXPRESS,
 } from "./svg/badges";
 import Tippy from "@tippyjs/react";
 import "tippy.js/dist/tippy.css";
@@ -91,6 +92,13 @@ const propBadges = {
 		<Tippy key={Math.floor(Math.random() * 10000)} content="MongoDB">
 			<span className="mr-1 float-right">
 				<MONGODB />
+			</span>
+		</Tippy>
+	),
+	express: (
+		<Tippy key={Math.floor(Math.random() * 10000)} content="Express">
+			<span className="mr-1 float-right">
+				<EXPRESS />
 			</span>
 		</Tippy>
 	),

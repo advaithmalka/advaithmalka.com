@@ -1,6 +1,6 @@
 import React from "react";
 import Tippy from "@tippyjs/react";
-import { Row, Col } from "react-bootstrap";
+import { Row } from "react-bootstrap";
 import {
 	HTML,
 	CSS,
@@ -22,6 +22,7 @@ import {
 	SKLEARN,
 	NUMPY,
 	PANDAS,
+	EXPRESS,
 } from "./svg/badges";
 const SkillSet = () => {
 	const frontendSkills = [
@@ -36,7 +37,7 @@ const SkillSet = () => {
 		WEBPACK,
 		APOLLO,
 	];
-	const backendSkills = [DJANGO, PHP, SQL, NODE, GRAPHQL, MONGODB];
+	const backendSkills = [DJANGO, PHP, SQL, EXPRESS, NODE, GRAPHQL, MONGODB];
 	const otherSkills = [PYTHON, NUMPY, PANDAS];
 	const frontendNames = [
 		"HTML",
@@ -50,7 +51,15 @@ const SkillSet = () => {
 		"Webpack",
 		"Apollo Client",
 	];
-	const backendNames = ["Django", "PHP", "SQL", "Node", "GraphQL", "MongoDB"];
+	const backendNames = [
+		"Django",
+		"PHP",
+		"SQL",
+		"Express",
+		"Node",
+		"GraphQL",
+		"MongoDB",
+	];
 	const otherNames = ["Python", "Numpy", "Pandas"];
 	const frontendSkillSet = frontendSkills.map((Skill, idx) => (
 		<div
@@ -69,7 +78,7 @@ const SkillSet = () => {
 		<div key={idx} className="col-auto p-4">
 			<Tippy content={backendNames[idx]} offset={[0, 50]}>
 				<span>
-					<Skill width={80} />
+					<Skill width={90} />
 				</span>
 			</Tippy>
 		</div>

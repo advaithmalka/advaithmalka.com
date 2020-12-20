@@ -24,7 +24,7 @@ import StopwatchApp from "./views/projects/Stopwatch";
 // const Projects = React.lazy(() => import("./views/Projects"));
 const App = () => {
 	fetch("https://devmedia-server.herokuapp.com/");
-	fetch("https://advaiths-money-tracker.herokuapp.com/");
+	fetch("https://superchat-server-main.herokuapp.com/graphql/");
 	return (
 		<>
 			<Router onChange={(e) => console.log(e)}>

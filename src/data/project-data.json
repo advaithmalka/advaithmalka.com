@@ -185,5 +185,22 @@
       "graphql",
       "mongodb"
     ]
+  },
+  {
+    "name": "SuperChat",
+    "description": "A realtime chat app built for the future.",
+    "img": "superchat.png",
+    "link": "https://advaithm26.github.io/superchat/",
+    "date": "12/19/20",
+    "badges": [
+      "html",
+      "css",
+      "js",
+      "react",
+      "express",
+      "node",
+      "graphql",
+      "mongodb"
+    ]
   }
 ]
