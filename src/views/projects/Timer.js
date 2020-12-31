@@ -10,7 +10,7 @@ const TimerApp = () => {
 			<iframe
 				style={{ width: "100vw", border: "none", height: "100vh" }}
 				title="timer iframe"
-				src={`https://advaithm26.github.io/old-website/timer.html`}
+				src={`https://advaithmalka.github.io/old-website/timer.html`}
 			/>
 		</>
 	);

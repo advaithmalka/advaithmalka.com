@@ -9,7 +9,7 @@ const ClockApp = () => {
 			<iframe
 				style={{ width: "100vw", border: "none", height: "100vh" }}
 				title="clock iframe"
-				src={`https://advaithm26.github.io/old-website/clock.html`}
+				src={`https://advaithmalka.github.io/old-website/clock.html`}
 			/>
 		</>
 	);

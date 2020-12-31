@@ -123,7 +123,7 @@ const About = (props) => {
 						<div className="col d-flex justify-content-center">
 							<a
 								className="d-inline wd-max-content"
-								href="https://github.com/AdvaithM26?tab=repositories"
+								href="https://github.com/advaithmalka?tab=repositories"
 								target="_blank"
 								rel="noreferrer noopener"
 							>

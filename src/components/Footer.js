@@ -31,7 +31,7 @@ const Footer = () => (
 							<a
 								rel="noopener noreferrer"
 								target="_blank"
-								href="https://github.com/AdvaithM26/advaithm26.github.io"
+								href="https://github.com/advaithmalka/advaithmalka.github.io"
 								className="footer-link"
 							>
 								<li>Github repository</li>
@@ -43,7 +43,7 @@ const Footer = () => (
 							<a
 								rel="noopener noreferrer"
 								target="_blank"
-								href="https://advaithm26.github.io/old-website/"
+								href="https://advaithmalka.github.io/old-website/"
 								className="footer-link"
 							>
 								<li>Old website</li>

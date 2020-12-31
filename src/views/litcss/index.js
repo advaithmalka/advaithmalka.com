@@ -4,13 +4,13 @@ import "../../assets/css/hljs-custom.css";
 import { HashLink } from "react-router-hash-link";
 import { Link } from "react-router-dom";
 import hljs from "highlight.js/lib/core";
-import html from 'highlight.js/lib/languages/xml'
-import bash from 'highlight.js/lib/languages/bash'
+import html from "highlight.js/lib/languages/xml";
+import bash from "highlight.js/lib/languages/bash";
 import "../../assets/css/library.css";
 import LitLogo from "../../assets/img/litcss-logo.png";
 import LinkIcon from "../../assets/img/link-icon.svg";
-import Container from 'react-bootstrap/Container'
-import Card from 'react-bootstrap/Card'
+import Container from "react-bootstrap/Container";
+import Card from "react-bootstrap/Card";
 const LitcssHome = () => {
 	function copyText(target, copybtn) {
 		$(copybtn).text("Copied");
@@ -18,7 +18,6 @@ const LitcssHome = () => {
 			$(copybtn).text("Copy");
 		}, 2000);
 	}
-
 
 	$(".copy-btn").each(function () {
 		var thisCodebox = `#codebox${$(this)
@@ -52,12 +51,12 @@ const LitcssHome = () => {
 		});
 	});
 	useEffect(() => {
-		hljs.registerLanguage('html', html);
-		hljs.registerLanguage('bash', bash);
+		hljs.registerLanguage("html", html);
+		hljs.registerLanguage("bash", bash);
 		document.querySelectorAll("pre code").forEach((block) => {
 			hljs.highlightBlock(block);
 		});
-		document.title = 'LitCSS'
+		document.title = "LitCSS";
 	});
 	return (
 		<>
@@ -76,7 +75,7 @@ const LitcssHome = () => {
 								</button>
 							</HashLink>
 
-							<Link className='r-router-link' to="/litcss/docs">
+							<Link className="r-router-link" to="/litcss/docs">
 								<button className="r-router-link btn btn-outline-primary fs-25 btn-lg mt-5 mr-xl-3 m-1">
 									Docs
 								</button>
@@ -103,7 +102,6 @@ const LitcssHome = () => {
 					<Container className="mt-4">
 						<h2 id="download">
 							Github repo
-							
 							<HashLink to="#download">
 								<img
 									className="link-icon"
@@ -111,8 +109,7 @@ const LitcssHome = () => {
 									width="30"
 									alt=""
 								/>
-								</HashLink>
-							
+							</HashLink>
 						</h2>
 						<p className="fs-20">
 							Download the latest version of LitCSS directly to
@@ -120,7 +117,7 @@ const LitcssHome = () => {
 						</p>
 
 						<a
-							href="https://github.com/AdvaithM26/LitCSS"
+							href="https://github.com/advaithmalka/LitCSS"
 							target="_blank"
 							rel="noreferrer noopener"
 							download
@@ -135,7 +132,6 @@ const LitcssHome = () => {
 						</p>
 
 						<div className="codebox my-3 mb-4">
-						
 							<pre>
 								<code id="codebox-download-litcss html">
 									&lt;link rel="stylesheet" type="text/css"
@@ -150,7 +146,6 @@ const LitcssHome = () => {
 						</p>
 
 						<div className="codebox my-3 mb-4">
-							
 							<pre>
 								<code id="codebox-download-litjs">
 									&lt;script
@@ -172,7 +167,6 @@ const LitcssHome = () => {
 						</p>
 
 						<div className="codebox my-3 mb-4">
-							
 							<pre>
 								<code id="codebox-litcss-cdn">
 									&lt;link
@@ -184,7 +178,6 @@ const LitcssHome = () => {
 						<h5>LitJS</h5>
 
 						<div className="codebox my-3 mb-4">
-							
 							<pre>
 								<code id="codebox-litjs-cdn">
 									&lt;script
@@ -195,9 +188,8 @@ const LitcssHome = () => {
 
 						<h4 className="mt-5">NPM</h4>
 						<div className="codebox my-3">
-							
 							<pre>
-								<code className='bash' id="codebox-litcss-npm">
+								<code className="bash" id="codebox-litcss-npm">
 									npm i css-litcss
 								</code>
 							</pre>
@@ -221,7 +213,7 @@ const LitcssHome = () => {
 								className="doc-link"
 								target="_blank"
 								rel="noreferrer noopener"
-								href="https://github.com/AdvaithM26/LitCSS"
+								href="https://github.com/advaithmalka/LitCSS"
 							>
 								Github repository
 							</a>{" "}

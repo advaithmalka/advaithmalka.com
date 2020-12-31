@@ -1,21 +1,20 @@
 import React, { useEffect } from "react";
 import "../../assets/css/hljs-custom.css";
 import hljs from "highlight.js/lib/core";
-import html from 'highlight.js/lib/languages/xml'
-import bash from 'highlight.js/lib/languages/bash'
+import html from "highlight.js/lib/languages/xml";
+import bash from "highlight.js/lib/languages/bash";
 import "../../assets/css/library.css";
-import cookieJSLogo from '../../assets/img/cookie.png'
-import {Link} from 'react-router-dom'
+import cookieJSLogo from "../../assets/img/cookie.png";
+import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 const CookieJSHome = () => {
-
 	useEffect(() => {
-		hljs.registerLanguage('html', html);
-		hljs.registerLanguage('bash', bash);
+		hljs.registerLanguage("html", html);
+		hljs.registerLanguage("bash", bash);
 		document.querySelectorAll("pre code").forEach((block) => {
 			hljs.highlightBlock(block);
-    });
-    document.title = 'Cookie JS'
+		});
+		document.title = "Cookie JS";
 	});
 	return (
 		<div>
@@ -45,8 +44,8 @@ const CookieJSHome = () => {
 							<img
 								className="float-right lib-img round"
 								src={cookieJSLogo}
-                width={300}
-                alt='cookie js logo'
+								width={300}
+								alt="cookie js logo"
 							/>
 						</div>
 					</div>
@@ -55,17 +54,16 @@ const CookieJSHome = () => {
 			<div className="container mb-5" style={{ marginTop: "100px" }}>
 				<div className="card card-dark">
 					<div className="container mt-4">
-						<h2 id="download">
-							Download
-						</h2>
+						<h2 id="download">Download</h2>
 						<p className="fs-20">
-							Download the latest version of Cookie JS from the Github repository 
+							Download the latest version of Cookie JS from the
+							Github repository
 						</p>
 						<a
-							href="https://github.com/AdvaithM26/Cookie-JS"
-              className="btn btn-outline-primary mb-3 fs-18"
-              target='_blank'
-              rel='noreferrer noopener'
+							href="https://github.com/advaithmalka/Cookie-JS"
+							className="btn btn-outline-primary mb-3 fs-18"
+							target="_blank"
+							rel="noreferrer noopener"
 						>
 							Download
 						</a>
@@ -109,20 +107,20 @@ const CookieJSHome = () => {
 								<img
 									className="link-icon"
 									src="icons/link.png"
-                  width={30}
-                  alt=''
+									width={30}
+									alt=""
 								/>
 							</a>
 						</h2>
 						<p className="mb-5">
-							Visit the{' '}
+							Visit the{" "}
 							<a
 								className="doc-link"
-                target="_blank"
-                rel='noreferrer noopener'
-								href="https://github.com/AdvaithM26/Cookie-JS"
+								target="_blank"
+								rel="noreferrer noopener"
+								href="https://github.com/advaithmalka/Cookie-JS"
 							>
-								Github repository{' '}
+								Github repository{" "}
 							</a>
 							for Cookie JS
 						</p>
