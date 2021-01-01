@@ -1,10 +1,11 @@
 import React from "react";
-const Hamburger = props => {
+const Hamburger = (props) => {
 	return (
 		<span
 			className="hamburger-icon m-0 scale-75"
 			id={props.id}
-			style={{cursor:'pointer'}}
+			style={{ cursor: "pointer" }}
+			ref={props.burgerRef}
 		>
 			<span className="bar" />
 			<span className="bar" />

@@ -30,14 +30,14 @@ button.lit-btn {
 	padding: 0px;
 	filter: brightness(2);
 	top: 8px !important;
-	&:hover{
-		transform: translateY(-.8px);
+	&:hover {
+		transform: translateY(-0.8px);
 	}
 }
-.custom-shadow{
+.custom-shadow {
 	box-shadow: 0px 5px 15px rgba(56, 56, 56, 0.1);
 }
-.nav-color{
+.nav-color {
 	background-color: white !important;
 }
 /*
@@ -64,43 +64,43 @@ button.lit-btn {
 	margin-right: 20px;
 }
 
-
-#navbar-hamburger{
+#navbar-hamburger {
 	width: 65px;
 	height: 40px;
 	padding-top: 5px;
 	outline: none !important;
 }
-@media screen and (min-width: 992px){
-	.nav-arrow{
+@media screen and (min-width: 992px) {
+	.nav-arrow {
 		position: absolute;
 		top: 7px;
-		left: calc(50% - 74px)	!important;
+		left: calc(50% - 65px) !important;
 	}
-	#navbar-row{
+	#navbar-row {
 		margin: auto !important;
 		position: relative;
 		left: 100px;
 	}
-	.nav-dropdown{
+	.nav-dropdown {
 		width: 550px !important; // WIDTH OF DROPDOWN IN LARGE SCREEN
 	}
 }
-.nav-arrow{
+.nav-arrow {
 	filter: invert(1);
-	&:hover{
-		filter: invert(58%) sepia(0%) saturate(0%) hue-rotate(183deg) brightness(89%) contrast(88%);
+	&:hover {
+		filter: invert(58%) sepia(0%) saturate(0%) hue-rotate(183deg)
+			brightness(89%) contrast(88%);
 	}
 }
 
-@media screen and (max-width: 992px){
-	.nav-dropdown{
+@media screen and (max-width: 992px) {
+	.nav-dropdown {
 		width: 85vw; // WIDTH SMALL SCREEN
 	}
-	#navbar-row{
+	#navbar-row {
 		margin-left: -10px !important;
 	}
-	.navbar-collapse.collapsing .nav-arrow{
+	.navbar-collapse.collapsing .nav-arrow {
 		display: none !important;
 	}
 	.navbar-collapse.collapse .nav-arrow {
@@ -109,11 +109,10 @@ button.lit-btn {
 		top: 55px;
 		left: 110px;
 	}
-	
 }
-.drop-item{
+.drop-item {
 	color: #007bff;
-	&:hover{
+	&:hover {
 		color: #0055af;
 	}
 }

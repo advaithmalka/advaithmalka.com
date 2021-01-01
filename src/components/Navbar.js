@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import HomeLogo from "../assets/img/home.png";
 import Hamburger from "./Hamburger";
 import Logo from "../assets/img/logo.png";
@@ -8,15 +8,17 @@ import data from "../data/project-data.json";
 import Np from "nprogress";
 import Dropdown from "./Dropdown";
 function Navbar() {
-	const NavBurger = document.getElementById("inner-nav-hamburger");
+	const NavBurger = useRef();
 	const hamburgerClick = (e) => {
-		if (
-			!document.getElementById("navbarContent").classList.contains("show")
-		) {
-			NavBurger.classList.add("clicked");
-		} else {
-			NavBurger.classList.remove("clicked");
-		}
+		NavBurger.current.classList.toggle("clicked");
+		// console.log(NavBurger);
+		// if (
+		// 	!document.getElementById("navbarContent").classList.contains("show")
+		// ) {
+		// 	NavBurger.current.classList.add("clicked");
+		// } else {
+		// 	NavBurger.current.classList.remove("clicked");
+		// }
 	};
 	const [projects, setProjects] = useState();
 	const [projects2, setProjects2] = useState();
@@ -119,7 +121,7 @@ function Navbar() {
 					style={{ border: "none !important", cursor: "pointer" }}
 					id="navbar-hamburger"
 				>
-					<Hamburger id="inner-nav-hamburger" />
+					<Hamburger burgerRef={NavBurger} id="inner-nav-hamburger" />
 				</button>
 				<div id="navbarContent" className="collapse navbar-collapse">
 					<Link to="/">
@@ -142,11 +144,22 @@ function Navbar() {
 							</li>
 						</Link>
 						<Dropdown projects={projects} projects2={projects2} />
-						<Link to="/litcss" style={{ textDecoration: "none" }}>
+						{/* <Link to="/litcss" style={{ textDecoration: "none" }}>
 							<li className="nav-item nav-content nav-link nav-title text-uppercase fs-16 r-router-link">
 								LitCSS
 							</li>
-						</Link>
+						</Link> */}
+						<a
+							href="https://advaithmalka.medium.com/"
+							className="text-decoration-none"
+							target="_blank"
+							rel="noreferrer"
+						>
+							<li className="nav-item nav-content nav-link nav-title text-uppercase fs-16">
+								Blog
+							</li>
+						</a>
+
 						<Link to="/about" style={{ textDecoration: "none" }}>
 							<li className="nav-item nav-content nav-link nav-title text-uppercase fs-16 r-router-link">
 								About
