@@ -4,12 +4,8 @@ import LinkedInLogo from "../assets/img/linkedin.svg";
 import { Link } from "react-router-dom";
 const Footer = () => (
 	<>
-		<footer
-			id="footer"
-			className="pt-4"
-			style={{ backgroundColor: "black" }}
-		>
-			<div className="container-fluid pb-2" style={{ maxWidth: 1500 }}>
+		<footer id="footer" className="pt-6" style={{ backgroundColor: "black" }}>
+			<div className="container-fluid pb-4" style={{ maxWidth: 1500 }}>
 				<div className="row">
 					<div className="col-md text-center">
 						<ul className="list-unstyled text-small">
@@ -50,6 +46,7 @@ const Footer = () => (
 							</a>
 						</ul>
 					</div>
+					{/* TODO make logo center */}
 					<div className="col-md text-center">
 						<ul className="list-unstyled text-small">
 							<a

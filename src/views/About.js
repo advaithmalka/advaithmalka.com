@@ -9,7 +9,7 @@ import aboutBackdrop from "../assets/img/about-backdrop.jpg";
 import { Row } from "react-bootstrap";
 import SkillSet from "../components/SkillSet";
 import $ from "jquery";
-const About = (props) => {
+const About = props => {
 	useEffect(() => {
 		document.title = "About";
 		document.body.classList.add("body-grad");
@@ -45,13 +45,16 @@ const About = (props) => {
 			>
 				<h1 style={{ marginTop: 40, fontSize: 60 }}>About</h1>
 			</div>
-			<div id="about" className="container mt-4 mx-auto f-raleway">
+			<div id="about" className="container mt-4 mx-auto f-raleway py-4">
 				<div
 					style={{ borderRadius: 5 }}
-					className="card mb-5 card-dark mx-auto pb-4"
+					className="card mb-5 card-dark mx-auto px-2 pb-5"
 					id="card"
 				>
-					<p className="card-title card-body ml-4 h2 mb-n2">
+					<p
+						className="card-title card-body ml-4 h2"
+						style={{ marginBottom: -10 }}
+					>
 						Advaith Malka
 					</p>
 					<div className="row">
@@ -67,18 +70,15 @@ const About = (props) => {
 						</div>
 						<div className="col-md-8">
 							<p className="card-body">
-								Hello world! My name is Advaith Malka and thank
-								you for visiting my website! This website was
-								mainly built using React with the purpose of
-								showcasing all of the projects that I've created
-								over the years. I began programming ever since I
-								was only 13 years old and have loved it ever
-								since! As of right now I am experienced in a
-								wide variety of languages including HTML, CSS,
-								JS, PHP and SQL plus many frameworks and
-								libraries like React, Django, Pandas, Sklearn
-								ect. In my free time, when I'm not coding, I do
-								track and enjoy playing basketball. Anyhow thank
+								Hello world! My name is Advaith Malka and thank you for visiting
+								my website! This website was mainly built using React with the
+								purpose of showcasing all of the projects that I've created over
+								the years. I began programming ever since I was only 13 years
+								old and have loved it ever since! As of right now I am
+								experienced in a wide variety of languages including HTML, CSS,
+								JS, PHP and SQL plus many frameworks and libraries like React,
+								Django, Pandas, Sklearn ect. In my free time, when I'm not
+								coding, I do track and enjoy playing basketball. Anyhow thank
 								you for taking the time to view my website!{" "}
 							</p>
 						</div>
@@ -90,17 +90,13 @@ const About = (props) => {
 					<Row>
 						<div className="col d-flex justify-content-center">
 							<a
-								className="ml-5 d-inline wd-max-content"
+								className="ml-7 d-inline wd-max-content"
 								href="mailto:advaithm06@gmail.com"
 								target="_blank"
 								rel="noreferrer noopener"
 							>
 								<Tippy content="Contact me">
-									<img
-										src={MailLogo}
-										width={100}
-										alt="Mail"
-									/>
+									<img src={MailLogo} width={100} alt="Mail" />
 								</Tippy>
 							</a>
 						</div>
@@ -128,11 +124,7 @@ const About = (props) => {
 								rel="noreferrer noopener"
 							>
 								<Tippy content="Check out all of my projects!">
-									<img
-										alt="view my github"
-										src={GithubLogo}
-										width={100}
-									/>
+									<img alt="view my github" src={GithubLogo} width={100} />
 								</Tippy>
 							</a>
 						</div>

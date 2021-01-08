@@ -4,7 +4,7 @@ import DownArrow from "../components/DownArrow";
 import FeaturedCard from "../components/FeaturedCard";
 import data from "../data/project-data.json";
 import { HashLink } from "react-router-hash-link";
-const Home = (props) => {
+const Home = props => {
 	useEffect(() => {
 		document.title = "Home";
 		const body = document.querySelector("body");
@@ -39,17 +39,16 @@ const Home = (props) => {
 
 	return (
 		<div id="home" className="text-white">
-			<div className="container-fluid text-center mt-5 pt-5">
-				<h1 className="fs-60 mt-3 fw-500">Hello World</h1>
+			<div className="container-fluid text-center mt-12 pt-12">
+				<h1 className="fs-60 mt-4 fw-400">Hello World</h1>
 				<p className="lead">My name is </p>
-				<h1 className="fs-60 mt-n3 fw-500">Advaith Malka</h1>
+				<h1 className="fs-60 -mt-4 fw-400">Advaith Malka</h1>
 				<div className="text-center mx-auto" id="home-content">
 					<p className="lead">
 						And this is my personal website!
 						<br />
-						This website includes all of my programming projects
-						that I've built over the years using with a wide variety
-						of languages.
+						This website includes all of my programming projects that I've built
+						over the years using with a wide variety of languages.
 						<br /> Use the nav links above to start exploring!
 					</p>
 				</div>
@@ -66,7 +65,7 @@ const Home = (props) => {
 					<DownArrow />
 				</HashLink>
 			</div>
-			<div id="featured" className="container my-5">
+			<div id="featured" className="container my-12">
 				<h2>Featured projects</h2>
 				<div className="row">{featured}</div>
 			</div>

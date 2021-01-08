@@ -21,13 +21,15 @@ import StarWarsML from "./views/projects/StarWarsML";
 import ClockApp from "./views/projects/Clock";
 import TimerApp from "./views/projects/Timer";
 import StopwatchApp from "./views/projects/Stopwatch";
+import Blog from "./views/Blog";
+
 // const Projects = React.lazy(() => import("./views/Projects"));
 const App = () => {
 	fetch("https://devmedia-server.herokuapp.com/");
 	fetch("https://superchat-server-main.herokuapp.com/graphql/");
 	return (
 		<>
-			<Router onChange={(e) => console.log(e)}>
+			<Router onChange={e => console.log(e)}>
 				<Navbar />
 				<Switch>
 					<Route path="/" component={Home} exact />
@@ -45,20 +47,13 @@ const App = () => {
 					<Route path="/litcss" component={LitcssHome} />
 					<Route path="/cookie-js/docs" component={CookieJSDocs} />
 					<Route path="/cookie-js" component={CookieJSHome} />
+					<Route path="/blog" component={Blog} />
 					<Route component={FourOfour} />
 				</Switch>
 				<Footer />
 			</Router>
 			<HelmetProvider>
 				<Helmet>
-					<link
-						href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300&display=swap"
-						rel="stylesheet"
-					/>
-					<link
-						href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap"
-						rel="stylesheet"
-					></link>
 					<script src="https://cdn.jsdelivr.net/npm/bootstrap.native@3.0.0/dist/bootstrap-native.min.js"></script>
 				</Helmet>
 			</HelmetProvider>

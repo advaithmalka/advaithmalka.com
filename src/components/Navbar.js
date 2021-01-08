@@ -9,7 +9,7 @@ import Np from "nprogress";
 import Dropdown from "./Dropdown";
 function Navbar() {
 	const NavBurger = useRef();
-	const hamburgerClick = (e) => {
+	const hamburgerClick = e => {
 		NavBurger.current.classList.toggle("clicked");
 		// console.log(NavBurger);
 		// if (
@@ -30,13 +30,12 @@ function Navbar() {
 		showSpinner: false,
 	});
 	useEffect(() => {
-		document.body.addEventListener("click", (e) => {
+		document.body.addEventListener("click", e => {
 			if (
 				e.target.classList.contains("r-router-link") &&
 				!(
 					window.location.href === e.target.parentElement.href ||
-					window.location.href ===
-						e.target.parentElement.parentElement.href
+					window.location.href === e.target.parentElement.parentElement.href
 				)
 			) {
 				Np.inc(0.5);
@@ -57,7 +56,8 @@ function Navbar() {
 				<li className="nav-item" key={idx}>
 					{link.startsWith("http") ? (
 						<a
-							className="nav-link text-small pb-0 text-decoration-none"
+							className="nav-link text-small text-decoration-none"
+							style={{ paddingBottom: 0 }}
 							target="_blank"
 							rel="noreferrer noopener"
 							href={link}
@@ -66,7 +66,10 @@ function Navbar() {
 						</a>
 					) : (
 						<Link className="text-decoration-none" to={link}>
-							<span className="nav-link text-small pb-0 r-router-link">
+							<span
+								className="nav-link text-small r-router-link"
+								style={{ paddingBottom: 0 }}
+							>
 								{name}
 							</span>
 						</Link>
@@ -125,10 +128,7 @@ function Navbar() {
 				</button>
 				<div id="navbarContent" className="collapse navbar-collapse">
 					<Link to="/">
-						<div
-							id="home-logo"
-							className="navbar-brand d-none d-lg-block"
-						>
+						<div id="home-logo" className="navbar-brand d-none d-lg-block">
 							<img
 								className="r-router-link"
 								alt="go to home page"

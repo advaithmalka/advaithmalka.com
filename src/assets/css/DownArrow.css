@@ -1,17 +1,9 @@
 .arrow-wrapper {
-	width: 68px;
+	width: 70px;
 	display: block;
 	margin: auto;
 }
-
-.arrow-wrapper path {
-	stroke: #ffffff;
-	fill: transparent;
-	stroke-width: 1px;
-	animation: bounce 2s infinite;
-}
-
-@keyframes bounce {
+@keyframes arrow-bounce {
 	0%,
 	20%,
 	50%,
@@ -25,4 +17,11 @@
 	60% {
 		transform: translateY(15px);
 	}
+}
+
+.arrow-wrapper path {
+	stroke: #ffffff;
+	fill: transparent;
+	stroke-width: 1px;
+	animation: arrow-bounce 2s infinite;
 }

@@ -1,5 +1,5 @@
 .megamenu {
-	position: static;
+	position: absolute;
 }
 
 .megamenu .dropdown-menu {
@@ -7,10 +7,10 @@
 	border: none;
 }
 .dropdown-menu {
-	width: 100%;
+	width: 50vw;
 }
 .projects-dropdown {
-	width: 80%;
+	width: 30vw;
 }
 
 .text-uppercase {
@@ -73,8 +73,8 @@ button.lit-btn {
 @media screen and (min-width: 992px) {
 	.nav-arrow {
 		position: absolute;
-		top: 7px;
-		left: calc(50% - 65px) !important;
+		top: 5px;
+		left: calc(50% - 27px) !important;
 	}
 	#navbar-row {
 		margin: auto !important;
@@ -95,7 +95,8 @@ button.lit-btn {
 
 @media screen and (max-width: 992px) {
 	.nav-dropdown {
-		width: 85vw; // WIDTH SMALL SCREEN
+		width: 83vw;
+		padding-right: 20px !important; // NOTE WIDTH SMALL SCREEN
 	}
 	#navbar-row {
 		margin-left: -10px !important;
@@ -106,8 +107,9 @@ button.lit-btn {
 	.navbar-collapse.collapse .nav-arrow {
 		display: inline;
 		position: absolute;
-		top: 55px;
-		left: 110px;
+		top: -35px;
+		left: 100px;
+		padding: 0 20 !important;
 	}
 }
 .drop-item {

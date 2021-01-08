@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const Dropdown = ({ projects, projects2 }) => {
 	return (
-		<li className="nav-item dropdown megamenu nav-content">
+		<li className="nav-item dropdown megamenu nav-content ">
 			<button
 				style={{
 					background: "transparent",
@@ -20,39 +20,37 @@ const Dropdown = ({ projects, projects2 }) => {
 				<ChevronDown width={17} />
 			</button>
 			<div
-				aria-labelledby="project-megamenu"
-				className="dropdown-menu projects-dropdown border-0 p-0 m-0"
+				aria-labelledby="project-megamenu "
+				className="dropdown-menu projects-dropdown border-0 absolute -left-96"
+				style={{
+					margin: "5px 0px",
+					padding: 0,
+					width: "100vw !important",
+				}}
 			>
-				<div className="container ">
+				<div className="container-fluid w-100">
 					<div
 						id="navbar-row"
 						className="row justify-content-center bg-white rounded m-0 custom-shadow"
 					>
 						<div className="col-12">
-							<div className="p-4 nav-dropdown">
+							<div className="p-6 nav-dropdown">
 								<div className="row">
-									<div className="col mb-4">
+									<div className="col mb-6 -ml-4 lg:ml-0">
 										<h6 className=" text-uppercase dropdown text-decoration-none">
-											<Link
-												to="/projects"
-												className="text-decoration-none "
-											>
+											<Link to="/projects" className="text-decoration-none ">
 												<span className="drop-item r-router-link">
 													Projects
 												</span>
 											</Link>
 										</h6>
-										<ul className="list-unstyled ml-lg-n2">
-											{projects}
-										</ul>
+										<ul className="list-unstyled ">{projects}</ul>
 									</div>
-									<div className="col mb-4 pt-4">
-										<ul className="list-unstyled ml-lg-n2">
-											{projects2}
-										</ul>
+									<div className="col mb-6 pt-6">
+										<ul className="list-unstyled ">{projects2}</ul>
 									</div>
 
-									<div className="col mb-4">
+									<div className="col mb-6  -ml-4 lg:ml-0">
 										<h6
 											className="text-uppercase"
 											style={{
@@ -64,21 +62,21 @@ const Dropdown = ({ projects, projects2 }) => {
 										</h6>
 										<ul className="list-unstyled">
 											<li className="nav-item">
-												<Link
-													to="/litcss"
-													className="text-decoration-none"
-												>
-													<span className="nav-link text-small pb-0 r-router-link">
+												<Link to="/litcss" className="text-decoration-none">
+													<span
+														className="nav-link text-small r-router-link"
+														style={{ paddingBottom: 0 }}
+													>
 														LitCSS
 													</span>
 												</Link>
 											</li>
 											<li className="nav-item">
-												<Link
-													to="/cookie-js"
-													className="text-decoration-none"
-												>
-													<span className="nav-link text-small pb-0 r-router-link">
+												<Link to="/cookie-js" className="text-decoration-none">
+													<span
+														className="nav-link text-small r-router-link"
+														style={{ paddingBottom: 0 }}
+													>
 														Cookie JS
 													</span>
 												</Link>

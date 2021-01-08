@@ -3,7 +3,7 @@ import Card from "../components/Card";
 import data from "../data/project-data.json";
 import $ from "jquery";
 import ProjectBackdrop from "../assets/img/project-backdrop.jpg";
-const Projects = (props) => {
+const Projects = props => {
 	const [projectCards, setProjectCards] = useState();
 	useEffect(() => {
 		const cleanedData = data;
@@ -21,9 +21,9 @@ const Projects = (props) => {
 				/>
 			))
 		);
-		return () =>{
-			$(window).off('scroll.project')
-		}
+		return () => {
+			$(window).off("scroll.project");
+		};
 	}, []);
 	$(window).on("scroll.project", () => {
 		$("#projects").css(
@@ -50,7 +50,7 @@ const Projects = (props) => {
 				<h1 style={{ marginTop: 40, fontSize: 60 }}>Projects home</h1>
 				<p className="lead">A collection of projects made by Advaith Malka</p>
 			</div>
-			<div className="container p-3">
+			<div className="container p-4">
 				<div className="row">{projectCards}</div>
 			</div>
 		</>

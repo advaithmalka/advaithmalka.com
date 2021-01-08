@@ -23,6 +23,7 @@ import {
 	NUMPY,
 	PANDAS,
 	EXPRESS,
+	TAILWINDCSS,
 } from "./svg/badges";
 const SkillSet = () => {
 	const frontendSkills = [
@@ -36,6 +37,7 @@ const SkillSet = () => {
 		BOOTSTRAP,
 		WEBPACK,
 		APOLLO,
+		TAILWINDCSS,
 	];
 	const backendSkills = [DJANGO, PHP, SQL, EXPRESS, NODE, GRAPHQL, MONGODB];
 	const otherSkills = [PYTHON, NUMPY, PANDAS];
@@ -50,6 +52,7 @@ const SkillSet = () => {
 		"Bootstrap",
 		"Webpack",
 		"Apollo Client",
+		"Tailwind CSS",
 	];
 	const backendNames = [
 		"Django",
@@ -62,12 +65,8 @@ const SkillSet = () => {
 	];
 	const otherNames = ["Python", "Numpy", "Pandas"];
 	const frontendSkillSet = frontendSkills.map((Skill, idx) => (
-		<div
-			key={idx}
-			className="col-autp p-4"
-			style={{ border: "none 1px #d6d6d6" }}
-		>
-			<Tippy content={frontendNames[idx]} offset={[0, 50]}>
+		<div key={idx} className="col-auto" style={{ padding: "25px" }}>
+			<Tippy content={frontendNames[idx]} offset={[0, 20]}>
 				<span>
 					<Skill width={100} />
 				</span>
@@ -75,8 +74,8 @@ const SkillSet = () => {
 		</div>
 	));
 	const backendSkillSet = backendSkills.map((Skill, idx) => (
-		<div key={idx} className="col-auto p-4">
-			<Tippy content={backendNames[idx]} offset={[0, 50]}>
+		<div key={idx} className="col-auto " style={{ padding: "25px" }}>
+			<Tippy content={backendNames[idx]} offset={[0, 20]}>
 				<span>
 					<Skill width={90} />
 				</span>
@@ -84,8 +83,8 @@ const SkillSet = () => {
 		</div>
 	));
 	const otherSkillSet = otherSkills.map((Skill, idx) => (
-		<div key={idx} className="col-auto m-2">
-			<Tippy content={otherNames[idx]} offset={[0, 50]}>
+		<div key={idx} className="col-auto m-3" style={{ padding: "20px" }}>
+			<Tippy content={otherNames[idx]} offset={[0, 20]}>
 				<span>
 					<Skill width={100} />
 				</span>
@@ -93,9 +92,10 @@ const SkillSet = () => {
 		</div>
 	));
 	return (
-		<div className="card-body mt-5 mb-n2">
+		<div className="card-body mt-7">
+			<hr />
 			<h3 className="fw-500">Skills: </h3>
-			<h4 className="text-center my-4">Frontend</h4>
+			<h4 className="text-center my-6">Frontend</h4>
 			<Row
 				className="justify-content-center"
 				style={{ maxWidth: 800, margin: "auto" }}
@@ -103,7 +103,7 @@ const SkillSet = () => {
 				{frontendSkillSet}
 			</Row>
 			<hr />
-			<h4 className="text-center mt-5 mb-4">Backend</h4>
+			<h4 className="text-center mt-8 mb-4">Backend</h4>
 			<Row
 				className="justify-content-center"
 				style={{ maxWidth: 800, margin: "auto" }}
@@ -111,7 +111,7 @@ const SkillSet = () => {
 				{backendSkillSet}
 			</Row>
 			<hr />
-			<h4 className="text-center mt-5 mb-4">Other</h4>
+			<h4 className="text-center mt-8 mb-4">Other</h4>
 			<Row
 				className="justify-content-center"
 				style={{ maxWidth: 800, margin: "auto" }}
