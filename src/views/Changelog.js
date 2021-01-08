@@ -22,8 +22,8 @@ const Changelog = () => {
 		);
 	}, []);
 	return (
-		<div className="container py-3">
-			<h1 className='mt-4'>Changelog</h1>
+		<div className="container py-5 ">
+			<h1 className="mt-6">Changelog</h1>
 			{changeLog}
 		</div>
 	);
@@ -31,12 +31,12 @@ const Changelog = () => {
 
 export default Changelog;
 
-const Log = (props) => {
+const Log = props => {
 	return (
 		<>
-			<div className="h3 mt-5 my-4">{props.date}</div>
-			<div className="h5">{props.version}</div>
-			<ul className="mb-4">{props.completed}</ul>
+			<div className="h3 mt-10">{props.date}</div>
+			<div className="h5 mt-5">{props.version}</div>
+			<ul className="mb-4 leading-7">{props.completed}</ul>
 			<hr />
 		</>
 	);

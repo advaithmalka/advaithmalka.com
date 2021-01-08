@@ -149,7 +149,7 @@ function Navbar() {
 								LitCSS
 							</li>
 						</Link> */}
-						<a
+						{/* <a
 							href="https://advaithmalka.medium.com/"
 							className="text-decoration-none"
 							target="_blank"
@@ -158,7 +158,12 @@ function Navbar() {
 							<li className="nav-item nav-content nav-link nav-title text-uppercase fs-16">
 								Blog
 							</li>
-						</a>
+						</a> */}
+						<Link to="/blog" style={{ textDecoration: "none" }}>
+							<li className="nav-item nav-content nav-link nav-title text-uppercase fs-16 r-router-link">
+								Blog
+							</li>
+						</Link>
 
 						<Link to="/about" style={{ textDecoration: "none" }}>
 							<li className="nav-item nav-content nav-link nav-title text-uppercase fs-16 r-router-link">
