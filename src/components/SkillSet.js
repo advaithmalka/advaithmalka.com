@@ -66,7 +66,7 @@ const SkillSet = () => {
 	const otherNames = ["Python", "Numpy", "Pandas"];
 	const frontendSkillSet = frontendSkills.map((Skill, idx) => (
 		<div key={idx} className="col-auto" style={{ padding: "25px" }}>
-			<Tippy content={frontendNames[idx]} offset={[0, 20]}>
+			<Tippy content={frontendNames[idx]} offset={[0, 50]}>
 				<span>
 					<Skill width={100} />
 				</span>
@@ -75,7 +75,7 @@ const SkillSet = () => {
 	));
 	const backendSkillSet = backendSkills.map((Skill, idx) => (
 		<div key={idx} className="col-auto " style={{ padding: "25px" }}>
-			<Tippy content={backendNames[idx]} offset={[0, 20]}>
+			<Tippy content={backendNames[idx]} offset={[0, 50]}>
 				<span>
 					<Skill width={90} />
 				</span>
@@ -84,7 +84,7 @@ const SkillSet = () => {
 	));
 	const otherSkillSet = otherSkills.map((Skill, idx) => (
 		<div key={idx} className="col-auto m-3" style={{ padding: "20px" }}>
-			<Tippy content={otherNames[idx]} offset={[0, 20]}>
+			<Tippy content={otherNames[idx]} offset={[0, 50]}>
 				<span>
 					<Skill width={100} />
 				</span>

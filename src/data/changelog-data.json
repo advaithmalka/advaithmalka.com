@@ -91,7 +91,7 @@
   },
   {
     "date": "1/10/21",
-    "version": "2 (V2)",
+    "version": "2.0 (V2)",
     "completed": [
       "Typography changes and improvements",
       "Converted website to use TailwindCSS",
