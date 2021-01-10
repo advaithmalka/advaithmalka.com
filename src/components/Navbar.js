@@ -32,7 +32,7 @@ function Navbar() {
 	useEffect(() => {
 		document.body.addEventListener("click", e => {
 			if (
-				e.target.classList.contains("r-router-link") &&
+				e.target.classList.contains("router-link") &&
 				!(
 					window.location.href === e.target.parentElement.href ||
 					window.location.href === e.target.parentElement.parentElement.href
@@ -67,7 +67,7 @@ function Navbar() {
 					) : (
 						<Link className="text-decoration-none" to={link}>
 							<span
-								className="nav-link text-small r-router-link"
+								className="nav-link text-small router-link"
 								style={{ paddingBottom: 0 }}
 							>
 								{name}
@@ -104,7 +104,7 @@ function Navbar() {
 				<Link to="/" style={{ textDecoration: "none" }}>
 					<span className="navbar-brand d-block d-lg-none">
 						<img
-							className="r-router-link"
+							className="router-link"
 							src={Logo}
 							alt="Logo"
 							width="40px"
@@ -130,7 +130,7 @@ function Navbar() {
 					<Link to="/">
 						<div id="home-logo" className="navbar-brand d-none d-lg-block">
 							<img
-								className="r-router-link"
+								className="router-link"
 								alt="go to home page"
 								src={HomeLogo}
 								width="45px"
@@ -139,34 +139,19 @@ function Navbar() {
 					</Link>
 					<ul className="navbar-nav mx-auto">
 						<Link to="/projects" style={{ textDecoration: "none" }}>
-							<li className="nav-item nav-content nav-link nav-title text-uppercase fs-16 r-router-link">
+							<li className="nav-item nav-content nav-link nav-title text-uppercase fs-16 router-link">
 								Projects
 							</li>
 						</Link>
 						<Dropdown projects={projects} projects2={projects2} />
-						{/* <Link to="/litcss" style={{ textDecoration: "none" }}>
-							<li className="nav-item nav-content nav-link nav-title text-uppercase fs-16 r-router-link">
-								LitCSS
-							</li>
-						</Link> */}
-						{/* <a
-							href="https://advaithmalka.medium.com/"
-							className="text-decoration-none"
-							target="_blank"
-							rel="noreferrer"
-						>
-							<li className="nav-item nav-content nav-link nav-title text-uppercase fs-16">
-								Blog
-							</li>
-						</a> */}
 						<Link to="/blog" style={{ textDecoration: "none" }}>
-							<li className="nav-item nav-content nav-link nav-title text-uppercase fs-16 r-router-link">
+							<li className="nav-item nav-content nav-link nav-title text-uppercase fs-16 router-link">
 								Blog
 							</li>
 						</Link>
 
 						<Link to="/about" style={{ textDecoration: "none" }}>
-							<li className="nav-item nav-content nav-link nav-title text-uppercase fs-16 r-router-link">
+							<li className="nav-item nav-content nav-link nav-title text-uppercase fs-16 router-link">
 								About
 							</li>
 						</Link>

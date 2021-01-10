@@ -34,23 +34,21 @@ const Dropdown = ({ projects, projects2 }) => {
 						className="row justify-content-center bg-white rounded m-0 custom-shadow"
 					>
 						<div className="col-12">
-							<div className="p-6 nav-dropdown">
+							<div className="p-5 nav-dropdown">
 								<div className="row">
 									<div className="col mb-6 -ml-4 lg:ml-0">
 										<h6 className=" text-uppercase dropdown text-decoration-none">
 											<Link to="/projects" className="text-decoration-none ">
-												<span className="drop-item r-router-link">
-													Projects
-												</span>
+												<span className="drop-item router-link">Projects</span>
 											</Link>
 										</h6>
-										<ul className="list-unstyled ">{projects}</ul>
+										<ul className="list-unstyled ml-2 lg:ml-0">{projects}</ul>
 									</div>
 									<div className="col mb-6 pt-6">
-										<ul className="list-unstyled ">{projects2}</ul>
+										<ul className="list-unstyled">{projects2}</ul>
 									</div>
 
-									<div className="col mb-6  -ml-4 lg:ml-0">
+									<div className="col mb-6 -ml-4 lg:ml-0">
 										<h6
 											className="text-uppercase"
 											style={{
@@ -60,11 +58,11 @@ const Dropdown = ({ projects, projects2 }) => {
 										>
 											Libraries
 										</h6>
-										<ul className="list-unstyled">
+										<ul className="list-unstyled ml-2 lg:ml-0">
 											<li className="nav-item">
 												<Link to="/litcss" className="text-decoration-none">
 													<span
-														className="nav-link text-small r-router-link"
+														className="nav-link text-small router-link"
 														style={{ paddingBottom: 0 }}
 													>
 														LitCSS
@@ -74,7 +72,7 @@ const Dropdown = ({ projects, projects2 }) => {
 											<li className="nav-item">
 												<Link to="/cookie-js" className="text-decoration-none">
 													<span
-														className="nav-link text-small r-router-link"
+														className="nav-link text-small router-link"
 														style={{ paddingBottom: 0 }}
 													>
 														Cookie JS

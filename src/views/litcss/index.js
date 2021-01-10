@@ -53,7 +53,7 @@ const LitcssHome = () => {
 	useEffect(() => {
 		hljs.registerLanguage("html", html);
 		hljs.registerLanguage("bash", bash);
-		document.querySelectorAll("pre code").forEach((block) => {
+		document.querySelectorAll("pre code").forEach(block => {
 			hljs.highlightBlock(block);
 		});
 		document.title = "LitCSS";
@@ -66,8 +66,8 @@ const LitcssHome = () => {
 						<div className="col-8">
 							<h1 className="display-4 mb-5">LitCSS</h1>
 							<p className="lead wrap mb-4">
-								A CSS utility library that makes your coding
-								life just a little bit easier
+								A CSS utility library that makes your coding life just a little
+								bit easier
 							</p>
 							<HashLink to="#download">
 								<button className="btn btn-outline-primary btn-lg fs-25 mt-5 ml-xl-4 m-1">
@@ -75,8 +75,8 @@ const LitcssHome = () => {
 								</button>
 							</HashLink>
 
-							<Link className="r-router-link" to="/litcss/docs">
-								<button className="r-router-link btn btn-outline-primary fs-25 btn-lg mt-5 mr-xl-3 m-1">
+							<Link className="router-link" to="/litcss/docs">
+								<button className="router-link btn btn-outline-primary fs-25 btn-lg mt-5 mr-xl-3 m-1">
 									Docs
 								</button>
 							</Link>
@@ -103,17 +103,12 @@ const LitcssHome = () => {
 						<h2 id="download">
 							Github repo
 							<HashLink to="#download">
-								<img
-									className="link-icon"
-									src={LinkIcon}
-									width="30"
-									alt=""
-								/>
+								<img className="link-icon" src={LinkIcon} width="30" alt="" />
 							</HashLink>
 						</h2>
 						<p className="fs-20">
-							Download the latest version of LitCSS directly to
-							your PC from github
+							Download the latest version of LitCSS directly to your PC from
+							github
 						</p>
 
 						<a
@@ -127,8 +122,7 @@ const LitcssHome = () => {
 						</a>
 
 						<p>
-							Then place this code in <code>&lt;head&gt;</code> of
-							your document
+							Then place this code in <code>&lt;head&gt;</code> of your document
 						</p>
 
 						<div className="codebox my-3 mb-4">
@@ -141,8 +135,8 @@ const LitcssHome = () => {
 						</div>
 
 						<p>
-							To use components that require litJS, place this
-							code at the bottom of your HTML document
+							To use components that require litJS, place this code at the
+							bottom of your HTML document
 						</p>
 
 						<div className="codebox my-3 mb-4">
@@ -154,10 +148,8 @@ const LitcssHome = () => {
 							</pre>
 						</div>
 						<div className="note-primary mb-5">
-							LitJS requires{" "}
-							<a href="https://jquery.com/">jQuery</a> so make
-							sure you include jQuery <strong>before</strong>{" "}
-							LitJS
+							LitJS requires <a href="https://jquery.com/">jQuery</a> so make
+							sure you include jQuery <strong>before</strong> LitJS
 						</div>
 
 						<h4 className="mt-3">JSdelivr CDN</h4>

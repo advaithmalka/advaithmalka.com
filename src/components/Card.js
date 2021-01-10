@@ -33,7 +33,7 @@ const Card = props => {
 						</a>
 					) : (
 						<Link to={props.link} className="text-decoration-none">
-							<button className="lit-card-btn r-router-link">View</button>
+							<button className="lit-card-btn router-link">View</button>
 						</Link>
 					)}
 				</div>

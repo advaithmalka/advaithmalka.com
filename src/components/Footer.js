@@ -10,7 +10,7 @@ const Footer = () => (
 					<div className="flex-auto flex justify-center w-full md:flex-auto md:w-min">
 						<ul className="list-unstyled text-small">
 							<Link to="/about" className="footer-link">
-								<li className="r-router-link">About</li>
+								<li className="router-link">About</li>
 							</Link>
 						</ul>
 					</div>
@@ -18,7 +18,7 @@ const Footer = () => (
 					<div className="flex-auto flex justify-center">
 						<ul className="list-unstyled text-small">
 							<Link to="/changelog" className="footer-link">
-								<li className="r-router-link">Changelog</li>
+								<li className="router-link">Changelog</li>
 							</Link>
 						</ul>
 					</div>

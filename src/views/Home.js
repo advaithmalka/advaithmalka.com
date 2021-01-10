@@ -54,10 +54,7 @@ const Home = props => {
 				</div>
 
 				<Link to="/about">
-					<button
-						className="abt-btn r-router-link"
-						style={{ marginBottom: 60 }}
-					>
+					<button className="abt-btn router-link" style={{ marginBottom: 60 }}>
 						About Me!
 					</button>
 				</Link>

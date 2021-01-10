@@ -11,7 +11,7 @@ const CookieJSHome = () => {
 	useEffect(() => {
 		hljs.registerLanguage("html", html);
 		hljs.registerLanguage("bash", bash);
-		document.querySelectorAll("pre code").forEach((block) => {
+		document.querySelectorAll("pre code").forEach(block => {
 			hljs.highlightBlock(block);
 		});
 		document.title = "Cookie JS";
@@ -24,10 +24,9 @@ const CookieJSHome = () => {
 						<div className="col-8">
 							<h1 className="display-4 mb-5">Cookie JS</h1>
 							<p className="lead wrap mb-4">
-								A JavaScript library which easily lets anyone,
-								with or without knowledge of online cookies,
-								create, delete, and manage cookies for your new
-								website
+								A JavaScript library which easily lets anyone, with or without
+								knowledge of online cookies, create, delete, and manage cookies
+								for your new website
 							</p>
 							<HashLink to="#download">
 								<button className="btn btn-outline-primary btn-lg fs-25 mt-5 ml-xl-4 m-1">
@@ -35,7 +34,7 @@ const CookieJSHome = () => {
 								</button>
 							</HashLink>
 							<Link to="/cookie-js/docs">
-								<button className="r-router-link btn btn-outline-primary fs-25 btn-lg mt-5 mr-xl-3 m-1">
+								<button className="router-link btn btn-outline-primary fs-25 btn-lg mt-5 mr-xl-3 m-1">
 									Docs
 								</button>
 							</Link>
@@ -56,8 +55,8 @@ const CookieJSHome = () => {
 					<div className="container mt-4">
 						<h2 id="download">Download</h2>
 						<p className="fs-20">
-							Download the latest version of Cookie JS from the
-							Github repository
+							Download the latest version of Cookie JS from the Github
+							repository
 						</p>
 						<a
 							href="https://github.com/advaithmalka/Cookie-JS"
@@ -67,10 +66,7 @@ const CookieJSHome = () => {
 						>
 							Download
 						</a>
-						<p>
-							Then paste this code at the bottom of your HTML
-							document
-						</p>
+						<p>Then paste this code at the bottom of your HTML document</p>
 						<div className="codebox my-3 mb-4">
 							<pre>
 								<code id="codebox-local">
@@ -81,8 +77,8 @@ const CookieJSHome = () => {
 						</div>
 						<h4 className="mt-3">JSdelivr CDN</h4>
 						<p>
-							Copy and paste this code somewhere at the end of
-							your HTML document
+							Copy and paste this code somewhere at the end of your HTML
+							document
 						</p>
 						<div className="codebox my-3 mb-4">
 							<pre>
@@ -96,9 +92,7 @@ const CookieJSHome = () => {
 						<h4>NPM package manager</h4>
 						<div className="codebox my-3">
 							<pre>
-								<code id="codebox-cookie-npm">
-									npm i web-cookies-js
-								</code>
+								<code id="codebox-cookie-npm">npm i web-cookies-js</code>
 							</pre>
 						</div>
 						<h2 className="mt-4" id="github">
