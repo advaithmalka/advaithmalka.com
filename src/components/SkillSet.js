@@ -96,26 +96,17 @@ const SkillSet = () => {
 			<hr />
 			<h3 className="fw-500">Skills: </h3>
 			<h4 className="text-center my-6">Frontend</h4>
-			<Row
-				className="justify-content-center"
-				style={{ maxWidth: 800, margin: "auto" }}
-			>
+			<Row className="justify-center" style={{ maxWidth: 800, margin: "auto" }}>
 				{frontendSkillSet}
 			</Row>
 			<hr />
 			<h4 className="text-center mt-8 mb-4">Backend</h4>
-			<Row
-				className="justify-content-center"
-				style={{ maxWidth: 800, margin: "auto" }}
-			>
+			<Row className="justify-center" style={{ maxWidth: 800, margin: "auto" }}>
 				{backendSkillSet}
 			</Row>
 			<hr />
 			<h4 className="text-center mt-8 mb-4">Other</h4>
-			<Row
-				className="justify-content-center"
-				style={{ maxWidth: 800, margin: "auto" }}
-			>
+			<Row className="justify-center" style={{ maxWidth: 800, margin: "auto" }}>
 				{otherSkillSet}
 				<div className="col-auto m-2">
 					<Tippy content={"Sci-kit Learn"} offset={[0, 40]}>

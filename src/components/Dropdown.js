@@ -31,7 +31,7 @@ const Dropdown = ({ projects, projects2 }) => {
 				<div className="container-fluid w-100">
 					<div
 						id="navbar-row"
-						className="row justify-content-center bg-white rounded m-0 custom-shadow"
+						className="row justify-center bg-white rounded m-0 custom-shadow"
 					>
 						<div className="col-12">
 							<div className="p-5 nav-dropdown">

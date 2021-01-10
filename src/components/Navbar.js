@@ -102,7 +102,7 @@ function Navbar() {
 				className="sticky-top navbar navbar-expand-lg navbar-light nav-color py-2 custom-shadow"
 			>
 				<Link to="/" style={{ textDecoration: "none" }}>
-					<span className="navbar-brand d-block d-lg-none">
+					<span className="navbar-brand block lg:hidden">
 						<img
 							className="router-link"
 							src={Logo}
@@ -128,7 +128,7 @@ function Navbar() {
 				</button>
 				<div id="navbarContent" className="collapse navbar-collapse">
 					<Link to="/">
-						<div id="home-logo" className="navbar-brand d-none d-lg-block">
+						<div id="home-logo" className="navbar-brand hidden lg:block">
 							<img
 								className="router-link"
 								alt="go to home page"

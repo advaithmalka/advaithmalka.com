@@ -89,9 +89,9 @@ const About = props => {
 
 					<h4 className="card-body mt-5 mb-n2">Contact:</h4>
 					<Row>
-						<div className="col d-flex justify-content-center">
+						<div className="col flex justify-center">
 							<a
-								className="ml-7 d-inline wd-max-content"
+								className="ml-7 inline wd-max-content"
 								href="mailto:advaithm06@gmail.com"
 								target="_blank"
 								rel="noreferrer noopener"
@@ -101,9 +101,9 @@ const About = props => {
 								</Tippy>
 							</a>
 						</div>
-						<div className="col d-flex justify-content-center">
+						<div className="col flex justify-center">
 							<a
-								className="d-inline wd-max-content"
+								className="inline wd-max-content"
 								href="https://www.instagram.com/advaith_malka/"
 								target="_blank"
 								rel="noreferrer noopener"
@@ -117,9 +117,9 @@ const About = props => {
 								</Tippy>
 							</a>
 						</div>
-						<div className="col d-flex justify-content-center">
+						<div className="col flex justify-center">
 							<a
-								className="d-inline wd-max-content"
+								className="inline wd-max-content"
 								href="https://github.com/advaithmalka?tab=repositories"
 								target="_blank"
 								rel="noreferrer noopener"
