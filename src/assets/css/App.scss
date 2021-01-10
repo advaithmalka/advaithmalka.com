@@ -85,14 +85,31 @@ body.f-roboto {
 		width: 80vw;
 	}
 }
-
-// ul.list-dashed {
-// 	list-style-type: none;
-// 	& > li {
-// 		text-indent: -5px;
-// 		&:before {
-// 			content: "-  ";
-// 			text-indent: -5px;
-// 		}
-// 	}
-// }
+$spinner-border: 2.5px;
+.lit-spinner {
+	width: 30px;
+	height: 30px;
+	border: $spinner-border solid transparent;
+	border-top: $spinner-border solid #f3f3f3;
+	border-bottom: $spinner-border solid #f3f3f3;
+	border-radius: 50%;
+	animation: spin 1s linear infinite;
+}
+.lit-spinner-black {
+	@extend .lit-spinner;
+	border-top: $spinner-border solid #000;
+	border-bottom: $spinner-border solid #000;
+}
+.lit-spinner-big {
+	@extend .lit-spinner-black;
+	width: 6rem !important;
+	height: 6rem !important;
+}
+@keyframes spin {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}

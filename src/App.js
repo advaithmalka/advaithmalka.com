@@ -47,7 +47,11 @@ const App = () => {
 					<Route path="/litcss" component={LitcssHome} />
 					<Route path="/cookie-js/docs" component={CookieJSDocs} />
 					<Route path="/cookie-js" component={CookieJSHome} />
-					<Route path="/blog" component={Blog} />
+
+					<Route path="/blog">
+						<Blog />
+					</Route>
+
 					<Route component={FourOfour} />
 				</Switch>
 				<Footer />
