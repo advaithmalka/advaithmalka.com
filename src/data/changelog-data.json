@@ -88,5 +88,17 @@
       "Added Express badge",
       "Removed unused dependencies"
     ]
+  },
+  {
+    "date": "1/10/21",
+    "version": "2 (V2)",
+    "completed": [
+      "Typography changes and improvements",
+      "Converted website to use TailwindCSS",
+      "New blog page",
+      "Added TailwindCSS badge",
+      "Subtle navbar improvements and fixes",
+      "Bug fixes + improvements"
+    ]
   }
 ]

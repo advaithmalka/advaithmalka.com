@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useRef } from "react";
 import Tippy from "@tippyjs/react";
 import "tippy.js/dist/tippy.css";
 import GithubLogo from "../assets/img/github-logo.svg";
@@ -8,38 +8,39 @@ import babyAdvaith from "../assets/img/baby-advaith.jpg";
 import aboutBackdrop from "../assets/img/about-backdrop.jpg";
 import { Row } from "react-bootstrap";
 import SkillSet from "../components/SkillSet";
-import $ from "jquery";
 const About = props => {
+	const aboutRef = useRef();
 	useEffect(() => {
 		document.title = "About";
 		document.body.classList.add("body-grad");
 		return () => {
 			document.body.classList.remove("body-grad");
-			$(window).off("scroll.about");
+			window.removeEventListener("scroll", onScroll);
 		};
 	}, []);
 
 	const offset = 230;
-	$(window).on("scroll.about", () => {
-		$("#about").css(
-			"background-position",
-			`0px ${Math.round($(window).scrollTop() * -0.65) - offset}px`
-		);
-	});
+	const onScroll = () => {
+		if (aboutRef.current) {
+			aboutRef.current.style.backgroundPosition = `0px ${
+				Math.round(window.scrollY * -0.65) - offset
+			}px`;
+		}
+	};
+	window.addEventListener("scroll", onScroll);
 	const styles = {
 		paddingTop: 100,
 		paddingBottom: 130,
 		backgroundColor: "orange",
 		backgroundImage: `url(${aboutBackdrop})`,
 		backgroundSize: "cover",
-		backgroundPosition: `0px ${
-			Math.round($(window).scrollTop() * -0.65) - offset
-		}px`,
+		backgroundPosition: `0px ${Math.round(window.scrollY * -0.65) - offset}px`,
 	};
 	return (
 		<>
 			<div
 				id="about"
+				ref={aboutRef}
 				className="container-fluid text-center text-white"
 				style={styles}
 			>
