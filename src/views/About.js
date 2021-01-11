@@ -5,51 +5,45 @@ import GithubLogo from "../assets/img/github-logo.svg";
 import InstaLogo from "../assets/img/instagram-logo.svg";
 import MailLogo from "../assets/img/mail.svg";
 import babyAdvaith from "../assets/img/baby-advaith.jpg";
-import aboutBackdrop from "../assets/img/about-backdrop.jpg";
+import aboutBackdrop from "../assets/img/about-backdrop.jpeg";
 import { Row } from "react-bootstrap";
 import SkillSet from "../components/SkillSet";
+import { onScroll } from "../util/onScroll";
 const About = props => {
 	const aboutRef = useRef();
 	useEffect(() => {
 		document.title = "About";
-		document.body.classList.add("body-grad");
+		window.addEventListener("scroll", () => onScroll(aboutRef, 120));
+
 		return () => {
-			document.body.classList.remove("body-grad");
-			window.removeEventListener("scroll", onScroll);
+			window.removeEventListener("scroll", () => onScroll(aboutRef, 120));
 		};
 	}, []);
 
-	const offset = 230;
-	const onScroll = () => {
-		if (aboutRef.current) {
-			aboutRef.current.style.backgroundPosition = `0px ${
-				Math.round(window.scrollY * -0.65) - offset
-			}px`;
-		}
-	};
-	window.addEventListener("scroll", onScroll);
 	const styles = {
-		paddingTop: 100,
-		paddingBottom: 130,
-		backgroundColor: "orange",
+		height: 370,
+		backgroundColor: "#242424",
 		backgroundImage: `url(${aboutBackdrop})`,
 		backgroundSize: "cover",
-		backgroundPosition: `0px ${Math.round(window.scrollY * -0.65) - offset}px`,
+		backgroundPosition: !window.matchMedia("(min-width: 1000px)").matches
+			? 0
+			: `0px ${Math.round(window.scrollY * -0.5) - 120}px`,
 	};
 	return (
 		<>
 			<div
-				id="about"
 				ref={aboutRef}
-				className="container-fluid text-center text-white"
+				className="container-fluid text-center text-white flex items-center"
 				style={styles}
 			>
-				<h1 style={{ marginTop: 40, fontSize: 60 }}>About</h1>
+				<div className="mx-auto">
+					<h1 className="text-7xl">About</h1>
+				</div>
 			</div>
 			<div id="about" className="container mt-4 mx-auto f-raleway py-4">
 				<div
 					style={{ borderRadius: 5 }}
-					className="card mb-5 card-dark mx-auto px-2 pb-5"
+					className="card border-none custom-shadow mb-5 card-dark mx-auto px-2 pb-5"
 					id="card"
 				>
 					<p
