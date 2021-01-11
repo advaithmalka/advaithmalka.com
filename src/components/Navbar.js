@@ -11,14 +11,6 @@ function Navbar() {
 	const NavBurger = useRef();
 	const hamburgerClick = e => {
 		NavBurger.current.classList.toggle("clicked");
-		// console.log(NavBurger);
-		// if (
-		// 	!document.getElementById("navbarContent").classList.contains("show")
-		// ) {
-		// 	NavBurger.current.classList.add("clicked");
-		// } else {
-		// 	NavBurger.current.classList.remove("clicked");
-		// }
 	};
 	const [projects, setProjects] = useState();
 	const [projects2, setProjects2] = useState();
