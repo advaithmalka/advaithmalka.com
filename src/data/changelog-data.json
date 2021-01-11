@@ -105,9 +105,10 @@
     "date": "1/11/21",
     "version": "2.1",
     "completed": [
-      "Changed backdrop for About page",
       "Added backdrop for Blog page",
+      "Changed backdrop for About page",
       "Changed blog post cards",
+      "Changed navbar logo from blue to white",
       "Removed backdrop scroll effect on mobile",
       "Removed blue gradient on About page"
     ]
