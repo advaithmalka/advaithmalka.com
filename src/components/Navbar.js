@@ -1,7 +1,7 @@
 import React, { useEffect, useState, useRef } from "react";
 import HomeLogo from "../assets/img/home.png";
 import Hamburger from "./Hamburger";
-import Logo from "../assets/img/logo.png";
+import Logo from "../assets/img/logo-white.png";
 import { Link } from "react-router-dom";
 import "../assets/css/Navbar.scss";
 import data from "../data/project-data.json";
