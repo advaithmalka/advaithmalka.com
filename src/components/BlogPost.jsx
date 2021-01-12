@@ -1,5 +1,5 @@
 import React from "react";
-
+import chevronRight from "../assets/img/chevron-right.svg";
 const BlogPost = ({ post }) => {
 	function unixConverter(timestamp) {
 		const a = new Date(timestamp);
@@ -49,9 +49,10 @@ const BlogPost = ({ post }) => {
 						href={post.url}
 						target="_blank"
 						rel="noreferrer"
-						className="hidden md:block float-right lit-btn"
+						className="blog-btn hidden md:block mt-1 hover:text-gray-500 text-gray-600 text-uppercase text-decoration-none md:float-right px-3 py-2"
 					>
-						Read story
+						Read story{" "}
+						<img src={chevronRight} className="-mt-1" alt="" id="blog-arrow" />
 					</a>
 					<div className="flex flex-wrap mt-4">
 						<a
@@ -66,9 +67,12 @@ const BlogPost = ({ post }) => {
 								style={{ maxWidth: 30 }}
 								alt=""
 							/>
-							<div className="text-gray-700 ml-2">Advaith Malka</div>
+							<div className="text-gray-700 ml-2 ">Advaith Malka</div>
 						</a>
-						<div className="text-gray-500 flex text-sm ml-2 items-center leading-4">
+						<div
+							className="text-gray-500 flex text-sm ml-2 items-center leading-4"
+							style={{ marginTop: 2 }}
+						>
 							{unixConverter(post.publishAt)}
 						</div>
 					</div>

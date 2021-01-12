@@ -1,9 +1,9 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 const FourOfour = () => {
-	useEffect(() =>{
-		document.title = '404!'
-	})
+	useEffect(() => {
+		document.title = "404!";
+	});
 	return (
 		<>
 			<div className="container text-center my-5">
@@ -17,7 +17,7 @@ const FourOfour = () => {
 				/>
 				<h2 className="text-center">Lets get you back on track</h2>
 				<Link to="/">
-					<button className="gradient-btn-blue gradient-btn-lg ms-auto mt-3">
+					<button className="gradient-btn-blue gradient-btn-lg mt-3">
 						Home
 					</button>
 				</Link>

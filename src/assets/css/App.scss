@@ -136,3 +136,16 @@ $spinner-border: 2.5px;
 		color: white;
 	}
 }
+
+.blog-btn {
+	img {
+		transform: translateY(0px);
+		transition: 200ms;
+	}
+	&:hover {
+		img {
+			transform: translateX(2.5px);
+			transition: 200ms;
+		}
+	}
+}

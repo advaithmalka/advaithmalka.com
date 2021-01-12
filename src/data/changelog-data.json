@@ -112,5 +112,12 @@
       "Removed backdrop scroll effect on mobile",
       "Removed blue gradient on About page"
     ]
+  },
+  {
+    "date": "1/12/21",
+    "version": "2.2",
+    "completed": [
+      "Changed \"READ STORY\" button on Blog page"
+    ]
   }
 ]
