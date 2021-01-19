@@ -46,13 +46,12 @@ const Footer = () => (
 							</a>
 						</ul>
 					</div>
-					{/* TODO make logo center */}
 					<div className="flex-auto flex justify-center w-full  md:flex-auto md:w-min">
 						<ul className="list-unstyled text-small">
 							<a
 								rel="noopener noreferrer"
 								target="_blank"
-								href="https://www.linkedin.com/in/advaith-malka-6a812a1bb/"
+								href="https://www.linkedin.com/in/advaithmalka/"
 								className="footer-link"
 							>
 								<img
