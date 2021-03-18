@@ -119,5 +119,13 @@
     "completed": [
       "Changed \"READ STORY\" button on Blog page"
     ]
+  },
+  {
+    "date": "3/18/21",
+    "version": "2.3",
+    "completed": [
+      "Added Lit Bot to projects page",
+      "Card updates"
+    ]
   }
 ]

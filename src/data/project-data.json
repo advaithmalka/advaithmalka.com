@@ -202,5 +202,17 @@
       "graphql",
       "mongodb"
     ]
+  },
+  {
+    "name": "Lit Bot",
+    "description": "The perfect multi-purpose Discord bot to enlighten your servers.",
+    "img": "litbot.png",
+    "link": "https://realtechnerd.github.io/lit-bot/",
+    "date": "3/11/21",
+    "badges": [
+      "node",
+      "express",
+      "mongodb"
+    ]
   }
 ]
