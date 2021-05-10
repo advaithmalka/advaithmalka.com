@@ -214,5 +214,22 @@
       "express",
       "mongodb"
     ]
+  },
+  {
+    "name": "MediCord",
+    "description": "Another Full Stack app by the Full Stack Slackers that transcribes and summarizes audio files quickly and efficiently. ",
+    "img": "medicord.png",
+    "link": "https://advaithmalka.github.io/medicord/",
+    "date": "4/11/21",
+    "badges": [
+      "html",
+      "css",
+      "js",
+      "react",
+      "express",
+      "node",
+      "firebase",
+      "mongodb"
+    ]
   }
 ]
