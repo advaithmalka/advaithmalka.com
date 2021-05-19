@@ -127,5 +127,20 @@
       "Added Lit Bot to projects page",
       "Card updates"
     ]
+  },
+  {
+    "date": "5/10/21",
+    "version": "2.4",
+    "completed": [
+      "Added MediCord to projects page",
+      "Added Firebase badge"
+    ]
+  },
+  {
+    "date": "5/19/21",
+    "version": "2.5",
+    "completed": [
+      "Update featured cards"
+    ]
   }
 ]
