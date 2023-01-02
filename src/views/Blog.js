@@ -47,10 +47,11 @@ const Blog = () => {
           <div ref={blogPostsRef} className="my-7" id="blog-posts">
             {loading ? (
               <div
-                className="flex items-center justify-center"
-                style={{ height: "70vh" }}
+                className="flex items-center justify-center "
+                style={{ height: "50vh" }}
               >
-                <div className="lit-spinner-big"></div>
+                {/* <div className="lit-spinner-big"></div> */}
+                {"The blog API is unfortunately down :("}
               </div>
             ) : (
               blogPosts.map((post, idx) => {
